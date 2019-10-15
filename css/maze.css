@@ -1,0 +1,329 @@
+/*我发誓我以后再也不手写CSS了，直接go die*/
+
+
+html {
+	scroll-behavior: smooth;   /*让网页导航变得更顺滑*/
+}
+
+body{
+	margin : 0 auto;
+	text-align: center; 
+	width: 100%;
+	background-color: #EEFFFF; /*淡蓝色*/
+}
+
+h2 {
+	font-size: 40px;
+	color: #FFB1A7;
+	transition: 0.5s;
+}
+
+#about h2, #play h2{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+h2:hover{
+	color: white;
+	background-color: #FFB0B0; 
+}
+
+#settings h2:hover{
+	color: white;
+	background-color: transparent;
+}
+
+div{
+	margin: 0 auto;
+}
+
+body a {
+	transition: 0.5s;
+}
+
+#home{
+	height: 800px;
+}
+
+#about{
+	margin-bottom: 120px;
+}
+
+#settings {
+	background-color: pink;
+	height: 370px;
+}
+
+#topNav{
+	transition: 0s;         /*已debug：注意，jQuery的fadeIn/Out动画和transision不兼容！*/
+	text-decoration: none;
+	margin:0 0 0 0; 
+	padding: 20px 9px 20px 9px; 
+	border-radius: 60px; 
+	font-size: 22px;
+	color: white;
+	background-color: #FFB1A7;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	display:none;          /*默认顶部导航标签是隐藏的，这里加了jQuery动画算了，不用样式表*/
+}
+
+#topNav:hover{
+	background-color: black;
+}
+
+/*这一类的div是用来debug margin越界导致的排版问题的*/
+.spacer {
+	margin: 0 0 0 0;
+	width: 100%;
+	height: 1px;
+}
+
+#header {
+	text-decoration: none;  /*防止超链接给让其下的<h1>元素有下划线*/
+}
+
+#header h1 {
+	margin-top: 120px;
+	margin-bottom: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	transition: 0.5s;		/*渐变参数，本网页特效的主要来源*/
+	font-size: 80px;
+	text-decoration: none;  
+	color : #FFB1A7;
+}
+
+#header h1:hover {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: black;
+	background-color: pink;
+}
+
+#creator {
+	display: hidden;       /*让元素隐藏，无法选中*/
+	position: absolute;
+	left: 75%; 
+	top: 240px;
+	transition: 0.5s;
+	color: #EEFFFF;
+	font-size: 22px;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#creator:hover {
+	color: #A3C962; /*鲜绿色*/
+}
+
+#home p{
+	margin-bottom: 60px;
+	transition: 0.5s;
+	color: #FFDDAA;
+	text-align: center;
+	font-size: 19px;
+}
+
+#home p:hover {
+	color: #D5B080;
+}
+
+#nav {
+	list-style: none; /*去掉小圆点*/
+	padding: 0 0 0 0;
+	height: 100px;
+	width: 800px;
+}
+
+#nav li{
+	float: left;             /*加了它，<ui>就能横向排版*/
+  line-height: 38px;       /*这是让<ui>横向排版时居中的关键!*/
+	margin: 30px 30px auto; /*设置各个<li>的间距，加了auto就不怕网页缩小排版崩掉了*/
+}
+
+#nav a{
+  text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	color : #FFB1A7;
+	background-color : none;
+	padding : 5px 20px 5px 20px;
+	border-radius: 14px;
+	
+}
+
+#nav a:hover{
+	color : white;
+	background-color: black;
+}
+
+#start-game{
+	text-decoration: none;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: capitalize;   /*保证按钮首字母大写*/
+	color: white;
+	background-color : #FFB1A7;
+	padding : 10px 20px 10px 20px;
+	border-radius: 20px;
+	transition: 0.5s;
+	border: none;
+}
+
+#start-game:hover {
+	background-color : black;
+	padding : 18px 24px 18px 24px;
+	border-radius: 35px;
+	
+}
+
+#about p{
+	color: pink;
+	transition: 0.5s;
+	font-size: 22px;
+	letter-spacing: 1px;
+	margin: 60px;
+}
+
+#about p:hover{
+	color: #a3c962
+}
+
+#about ul{
+	color: pink;
+}
+
+#about ul li{
+	transition: 0.5s;
+	margin: 8px;
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+#about ul:hover{
+	color: #a3c962
+}
+
+#settings p{
+	color: white;
+	font-size: 20px;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+#hint_settings:hover{
+	color: #a3c962;
+}
+#cfm-btn{
+	color: #D5B080;
+	letter-spacing: 1px;
+	font-size: 20px;
+	transition: 0.5s;
+	border: none;
+	background-color: white;
+	padding: 5px 16px 6px;
+	margin-left: 15px;;
+	border-radius: 10px;
+}
+
+#cfm-btn:hover{
+	color: white;
+	background-color: black;
+}
+
+#str-btn{
+	color: white;
+	letter-spacing: 1px;
+	font-size: 20px;
+	transition: 0.5s;
+	border: none;
+	background-color: black;
+	padding: 5px 16px 6px;
+	margin-left: 15px;;
+	border-radius: 10px;
+}
+
+#str-btn:hover{
+	background-color: #a3c962;
+}
+
+.textInput{
+	color: #D5B080;
+	border: none;
+	font-size: 20px;
+	width: 40px;
+}
+
+.checkInput{
+	border: none;
+}
+
+#play a{
+	text-decoration: none;
+}
+
+#play h2{
+	margin-top: 100px;
+
+}
+
+#play h2:hover{
+	font-size: 60px;
+	color: white;
+	background-color: #FFB0B0; 
+}
+
+#rst-btn {
+	margin-bottom: 20px;
+	display: ;
+	transition: 0.5s;
+	border-radius:20px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	padding: 7px 17px;
+	font-size: 20px;
+	border: 2px solid #fff;   /*白色实心边框*/
+	background-color:#a3c962; /*背景鲜绿色*/
+	color: #fff;              /*字体纯白*/
+}
+
+#rst-btn:hover {
+	background: #000;         /*悬浮背景变黑*/
+}
+
+#play p{
+	margin-top:0px;
+  color: #BB999B;
+	font-style: none;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+#hint_play:hover{
+	color: #a3c962;
+}
+
+#btm{
+	height: 100px;
+}
+
+#skp-btn1, #skp-btn2 {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	display: ;
+	border-radius:20px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	padding: 7px 17px;
+	font-size: 20px;
+	border: 2px solid #fff;   
+	background-color: pink; 
+	color: #fff;              
+}
+
+#skp-btn1:hover, #skp-btn2:hover {
+	background: #a3c962;         /*悬浮背景变黑*/
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Maze</title>
+		<script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/maze.js"></script>
+		
+        <link type="text/css" rel="stylesheet" href="css/maze.css"></link>
+    </head>
+    <body onload="init()">
+		<!--已debug：注意一下，HTML标签不能直接用"符号等符号，转义字符是&quote，或者用十进制&#34表示-->
+		<a id="topNav" href="#home" onclick="$(&#34#topNav&#34).fadeOut(&#34slow&#34)">2Top </a>
+		<!--欢迎界面-->
+		<!--已debug：一定要加spacer做每个div的边界，不然容易在margin上越界，导致所有排版出问题-->
+		<div id="home"> <div class="spacer"> </div>
+			<nav> 
+				<ul id="nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#settings">Settings</a></li>
+					<li><a href="#play">Play!</a></li>
+				</ul>
+			</nav>
+		    <a href="#home" id="header">
+				<h1>Maze Game</h1>
+			</a>
+			<div id="creator">Made By Kony</div>
+			<p>Create a maze, and solve it by computer.</p>
+ 
+			<div class="spacer"> </div>
+			<a id="start-game" href="#game" onclick="gameStart()">Start Game</a>
+		<div class="spacer"> </div></div>
+		
+		<!--游戏介绍-->
+		<div id="about"> <div class="spacer"> </div>
+			<h2>About</h2>
+			<p>Glad to meet u. I'm <em>computer maze solver v1.0</em></p>
+			<p>I create a randon maze, and solve it <strong>in different ways</strong></p>
+			<p>Here's a solutions I've made</p>
+			<img src="./src/example.png" alt="The example of a maze." />
+			<p>This page is designed to be totally user Interactive. Find easter eggs!</p>
+			<p>And maze solving is totally customized! </p>
+			<br/>
+			<p>I can use BFS(Best First Search), A*, WFS and DFS for maze solving</p>
+			<p>For better efficiency, I choose BFS by default</p>
+			<br/>
+			<p>I have four themes for use</p>
+			<p>You can change themes <strong>at any time</strong></p>
+			<p><em>--even if the maze is working!--</em></p>
+			<br/>
+			<p>The size of maze is limited to be 10 x 10 ~ 160 x 160</p>
+			<p>Default maze is 120 x 80</p>
+			<p><em>--Don't worry, I can handle all the invalid input!--</em></p>
+			<br/>
+			<p>And, There's more awaiting:</p>
+			<ul>
+				<li>More Customized color schemes, even designed by urself</li>
+				<li>More maze solving algorithms</li>
+				<li>Multiple mazes solving for comparision </li>
+				<li>And More...</li>
+			</ul>
+		<div class="spacer"> </div> </div>
+		
+		<!--设置界面-->
+		<div id="settings"> <div class="spacer"> </div>
+			<h2 style="color: white;">Settings</h2>
+			<p>
+				Row <input id="inRow" type="text" class="textInput"/> 
+				Col <input id="inCol" type="text" class="textInput"/>
+				<button id="cfm-btn" onclick="confirm()">
+					Confirm
+				</button>
+				<a href="#game">
+					<button id="str-btn" onclick="gameStart()">
+						Start Game
+					</button>
+				</a>
+			</p> 
+			<p>
+				<strong>Solver:</strong> &nbsp&nbsp&nbsp
+				BFS <input id="solver0" value=0 type="radio" name="solvers" onclick="solverChange()"/> &nbsp
+				A*  <input id="solver1" value=1 type="radio" name="solvers" onclick="solverChange()"/> &nbsp
+				WFS <input id="solver2" value=2 type="radio" name="solvers" onclick="solverChange()"/> &nbsp
+				DFS <input id="solver3" value=3 type="radio" name="solvers" onclick="solverChange()"/> &nbsp
+			</p>
+			<p>
+				Show drawing animation 
+				<input id="inAniMaze" type="checkbox" class="checkInput" onclick="checkChange()"/>
+				<br/>
+				Show solving animation 
+				<input id="inAniSolv" type="checkbox" class="checkInput" onclick="checkChange()"/>
+			</p> 
+
+			<p id="hint_settings" onclick="$(this).fadeOut(&#34slow&#34)"> </p>
+		<div class="spacer"> </div> </div>
+		
+		<!--游戏界面-->
+		<div id="play"> <div class="spacer"> </div>
+			<a href="#game">
+				<h2 onclick="gameStart()">
+					have fun!
+				</h2> 
+			</a>
+			<div id="game" class="spacer"></div>
+			<button id="rst-btn" onclick="gameRestart()">
+				Restart
+			</button>
+			<button id="skp-btn1" onclick="skip1()">
+				Skip Creating
+			</button>
+			<button id="skp-btn2" onclick="skip2()">
+				Skip Solving
+			</button>
+			<br/>
+			<p>
+				<strong>Theme:</strong> &nbsp&nbsp&nbsp
+				Sweet Dream <input id="color0" value=0 type="radio" name="colors" onclick="colorChange()"/> &nbsp&nbsp
+				Ice Cream   <input id="color1" value=1 type="radio" name="colors" onclick="colorChange()"/> &nbsp&nbsp
+				Toxic Gream <input id="color2" value=2 type="radio" name="colors" onclick="colorChange()"/> &nbsp&nbsp
+				Shadow Beam <input id="color3" value=3 type="radio" name="colors" onclick="colorChange()"/> &nbsp&nbsp
+			</p>
+			
+			<div id="maze"></div>
+			<p id="hint_play" onclick="$(this).fadeOut(&#34slow&#34)"> </p>
+        <div class="spacer" id="btm"> </div> </div>
+		
+		
+    </body>
+</html>

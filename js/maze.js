@@ -275,6 +275,8 @@ function solveMaze() {
 	}
 }
 function getCursorPos(event) {
+	if (!game)
+		return;
 	var rect = this.getBoundingClientRect();
 	var x = Math.floor((event.clientX - rect.left) / grid),
 		y = Math.floor((event.clientY - rect.top) / grid);

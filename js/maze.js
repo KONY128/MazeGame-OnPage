@@ -400,6 +400,7 @@ function gameStart() {
 	$("#solver1").attr("disabled", true);
 	$("#solver2").attr("disabled", true);
 	$("#solver3").attr("disabled", true);
+	prompt_settings("You can change solver and maze size after game!");
 	//规范化迷宫，让它更好看
 	if (cols % 2 == 0)--cols;
 	if (rows % 2 == 0)--rows;

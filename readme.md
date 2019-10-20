@@ -1,4 +1,4 @@
-Maze Game On Page!
+# Maze Game On Page!
 
 ## How To Fun? 🌈
 

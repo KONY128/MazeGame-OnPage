@@ -22,7 +22,7 @@ All HTML\CSS\JavaScript files are man-made. To me, it's a total pain 😭. Maybe
 
 ## Here's a maze I've solved 👓
 
-<img src="https://github.com/KONY128/Maze-Game-On-Page/raw/master/src/example.png" alt="Maze Game Sample" style="zoom: 60%;" />
+<img src="https://github.com/KONY128/Maze-Game-On-Page/raw/master/src/example_small.png" alt="Maze Game Sample" />
 
 
 

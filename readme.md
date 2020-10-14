@@ -2,7 +2,10 @@
 
 ## How To Fun? 🌈
 
-please run **./maze.html** directly 4 fun. Enjoy! 😀
+please visit [demo website](http://maze.kony128.xyz)
+
+or run **./maze.html** directly 4 fun. Enjoy! 😀
+
 ## Never Handwrite Web App Again
 All HTML\CSS\JavaScript files are man-made. To me, it's a total pain 😭. Maybe I shall use Dreamweaver later.
 ## Highlight

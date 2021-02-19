@@ -2,7 +2,7 @@
 
 ## How To Fun? 🌈
 
-please visit [demo website](http://maze.kony128.xyz)
+please visit [demo website](https://maze.ehyl12168.xyz/)
 
 or run **./maze.html** directly 4 fun. Enjoy! 😀
 

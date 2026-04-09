@@ -1,35 +1,28 @@
 # Maze Game On Page!
 
-## How To Fun? 🌈
+## How To Have Fun? 🌈
 
-please visit [demo website](https://maze.ehyl12168.xyz/)
+Please visit the [demo website](https://maze.ehyl12168.xyz/)
 
-or run **./maze.html** directly 4 fun. Enjoy! 😀
+or run **`./maze.html`** directly for fun. Enjoy! 😀
 
-## Never Handwrite Web App Again
-All HTML\CSS\JavaScript files are man-made. To me, it's a total pain 😭. Maybe I shall use Dreamweaver later.
+## Never Handwrite a Web App Again
+All HTML/CSS/JavaScript files were written by hand. For me, that is a total pain 😭. Maybe I should use Dreamweaver later.
+
 ## Highlight
-- **Totally interactive!** All elements are interactive. Find some **Easter eggs** please. 😋
-- Maze Game is fully animated and you can **skip animation**.
-- A **'Top Navigation Button'** only showed after u scrolling the page down away form top.
--  **Four algorithms for maze solving.**
-- Four themes for choose. 
-- You can **change the theme at any time, even if the maze is working!**
-- Customized maze size and **invalid inputs considered.**
-- Restart at any point.
-- A Nav Bar in top left of the page.
+- **Totally interactive!** All elements are interactive. Try to find some **Easter eggs**. 😋
+- Maze Game is fully animated, and you can **skip the animation**.
+- A **Top Navigation Button** appears only after you scroll down from the top of the page.
+- **Four algorithms for maze solving**
+- Four themes to choose from
+- You can **change the theme at any time, even while the maze is running!**
+- Customizable maze size with **invalid input handling**
+- Restart at any time
+- A navigation bar at the top left of the page
 
-
-
-
-
-## Here's a maze I've solved 👓
+## Here's a Maze I've Solved 👓
 
 <img src="https://github.com/KONY128/Maze-Game-On-Page/raw/master/src/example_small.png" alt="Maze Game Sample" />
-
-
-
-
 
 ## More Detailed Design 🎨
 
@@ -39,9 +32,9 @@ All HTML\CSS\JavaScript files are man-made. To me, it's a total pain 😭. Maybe
     <p>
     	Have fun!
     	<br/>
-    	When you click on the header, I'll lead u to the main page. 🐾
+    	When you click the header, it will take you to the main page. 🐾
     	<br/>
-    	You can start a game directly by default settings.
+    	You can start a game right away with the default settings.
     </p>
 </center>
 
@@ -49,21 +42,17 @@ All HTML\CSS\JavaScript files are man-made. To me, it's a total pain 😭. Maybe
 
 <center style="font-size: 18px; line-height: 36px; letter-spacing: 1px;">
     <p>
-    	I got a navigation bar. ⚓
+    	I've got a navigation bar. ⚓
     	<br/>
-    	And a top nav button! (appears after away from top)
+    	And a top navigation button! (It appears after you scroll down from the top.)
         <br/>
-    	To every part of the page, off u go! 🛫
+    	It can take you to every part of the page! 🛫
     </p>
 </center>
 
 ![Left top navigation bar demonstration](https://github.com/KONY128/Maze-Game-On-Page/raw/master/src/gifs/Nav.gif)
 
-
-
 ![Top Nav Btn Demonstration](https://github.com/KONY128/Maze-Game-On-Page/raw/master/src/gifs/TopNav.gif)
-
-
 
 ---
 
@@ -71,11 +60,11 @@ All HTML\CSS\JavaScript files are man-made. To me, it's a total pain 😭. Maybe
 
 <center style="font-size: 18px; line-height: 36px; letter-spacing: 1px;">
 	<p>
-    	All invalid input are considered
+    	All invalid inputs are handled
 		<br/>
-		All prompts disappear after clicking💁‍♂️
+		All prompts disappear after clicking 💁‍♂️
 		<br/>
-		You can't change settings when game is on
+		You can't change the settings while the game is running
     </p>
 </center>
 
@@ -87,13 +76,13 @@ All HTML\CSS\JavaScript files are man-made. To me, it's a total pain 😭. Maybe
 
 <center style="font-size: 18px; line-height: 36px; letter-spacing: 1px;">
 	<p>
-        Enojy! 🍹
+        Enjoy! 🍹
         <br/>
         Prompts disappear after clicking
         <br/>
         You can change themes at any time!
         <br/>
-        You can skip animation at any time!
+        You can skip the animation at any time!
         <br/>
         And guess what? You can restart at any time!
     </p>
